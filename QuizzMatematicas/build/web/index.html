@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>QUIZ MATEMATICO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="009999">
+        
+        <!––CREACION DE VARIABLES ––>
+        <script type="text/javascript">
+            function resultados(){
+                var Respuesta1 = parseFloat(document.getElementById("Respuesta1").value);
+                var Respuesta2 = parseFloat(document.getElementById("Respuesta2").value);
+                var Respuesta3 = parseFloat(document.getElementById("Respuesta3").value);
+                var Respuesta4 = parseFloat(document.getElementById("Respuesta4").value);
+                var Respuesta5 = parseFloat(document.getElementById("Respuesta5").value);
+                var Respuesta6 = parseFloat(document.getElementById("Respuesta6").value);
+                var Respuesta7 = parseFloat(document.getElementById("Respuesta7").value);
+                var Respuesta8 = parseFloat(document.getElementById("Respuesta8").value);
+                var Respuesta9 = parseFloat(document.getElementById("Respuesta9").value);
+                var Respuesta10 = parseFloat(document.getElementById("Respuesta10").value);
+                var RespuestaR = parseFloat(document.getElementById("RespuestaR").value);
+                var resultado = 0;
+                
+                if(Respuesta1 === 279){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta2 === 300){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta3 === 33){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta4 === 165){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta5 === 576){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta6 === 67){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta7 === 100){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta8 === 19){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta9 === 81){
+                    resultado = resultado +1 ;
+                }
+                if(Respuesta10 === 3375){
+                    resultado = resultado +1 ;
+                }
+                if(RespuestaR === 1983){
+                    resultado = resultado +1 ;
+                }
+                
+                alert("EL TOTAL DE SU PUNTUACION ES: " + resultado);
+                if(resultado === 11){
+                    alert("Calificacion Excepcional \n\ LA FUERZA ESTA CONTIGO...");
+                }
+                
+            }
+        </script>   
+         
+        <h1> <b style="text-align-last:center"> QUIZ DE MATEMATICAS</b> </h1>
+        
+        <div>
+            <form class="QuizMatematicas">
+                
+                <p style="text-align:center">RESPONDA LAS PREGUNTAS LO MAS HONESTO POSIBLE: </p> 
+                <p style="text-align:center"> 1-¿Cuanto es 525-246?: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta1" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 2-¿Cuanto es 123+177?: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta2" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 3-¿Cuanto es 561 / 17?: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta3" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 4-¿Cuanto es 15 x 11?: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta4" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 5-¿Cuanto es 24^2?: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta5" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 6-¿Cuanto es (87-53) + (129-96) </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta6" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 7-¿Cuanto es (220+280)-(210+190)?: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta7" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 8-¿Cuanto es (559-312) / (8+5)?: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta8" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 9-¿Cuanto es (45 / 5) x (3^2)?: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta9" min="1" max="1000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> 10-¿Cuanto es 15^3: </p>
+                <p style="text-align:center"> <input type="number" Id="Respuesta10" min="1" max="10000"> </p>
+                <p style="text-align:center">------------------------------------------------------------------------------------------------------------------------------------------------ </p> 
+                <p style="text-align:center"> RESCATE-¿En que año salio la pelicula "Star Wars:El Retorno del Jedi" originalmente?: </p>
+                <p style="text-align:center"> <input type="number" Id="RespuestaR" min="1" max="2020"> </p>
+                
+                <p style="text-align:center"> <input type="button" Id="Total" value="¡RESULTADOS!" onclick="resultados()"> </p>
+                
+            </form>
+            
+        </div>
+        
+    </body>
+</html>
